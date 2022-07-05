@@ -1,0 +1,110 @@
+body{
+
+    font-family: Fira Sans; 
+    margin: 0;
+}
+header {
+
+   
+    padding:15px 60px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    flex-flow: nowrap;
+    justify-content:space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+header a{
+color: yellow;
+text-decoration: none;
+padding: 12px ;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, .6 );
+}
+
+#highlights{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+
+}
+#page-logo a {
+
+    padding: 10px;
+    font-family: Fira Sans;
+    color: rgb(255, 255, 198);
+    font-size: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+
+header ul{
+    list-style:none;
+    margin: 15;
+    padding:0;
+    display: flex;
+ 
+}
+.destination img {
+
+   width:100%;
+   height:400px;
+   box-shadow: 2px 4px 8px rgba(0, 0, 0, .6);
+   border-radius: 20px;
+   object-fit: fill;
+   object-fit: cover;
+}
+#destination {
+
+    list-style: none ;
+    display: flex;
+    width:70%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+}
+
+
+#destination p {
+    text-align: center;
+    font-size: 25px; 
+    font-family: sans-serif;
+    text-transform: uppercase;
+    margin-top: 20px;
+    color:rgb(42, 42, 42);
+
+}
+
+#destination strong {
+    text-align: center;
+    font-size: 25px; 
+    font-family: sans-serif;
+    text-transform: uppercase;
+    margin-top: 20px;
+    color:black
+
+}
+
+.destination{
+    
+    
+   padding:10px;
+   margin: 0 auto; 
+
+}
+
+#highlights h2{
+text-align: center;
+}
