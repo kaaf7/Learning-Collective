@@ -23,3 +23,11 @@ for( const propName in loggedInUsers){
     //console.log(propName);
     console.log(loggedInUsers[propName]);
 }
+
+let isFinished=false;
+while (!isFinished){
+    isFinished = confirm ('Do you wanna continue?!');
+
+}
+
+console.log('Done');
