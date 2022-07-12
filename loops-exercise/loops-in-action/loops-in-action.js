@@ -1,6 +1,6 @@
 
 
-const calculateSumButton = document.querySelector('button');
+const calculateSumButton = document.querySelector('#calculator button');
 
 
 function calculateSum(){
@@ -20,7 +20,16 @@ calculateSumButton.addEventListener('click', calculateSum);
 
 
 
-// const highlightButtonSelector= document.getElementById('highlight-btn');
+ const highlightButtonSelector= document.querySelector('#highlight-links button');
+
+ function highLightLinks(){
+const anchorElements=document.querySelectorAll('#highlight-links a');
+for( const anchorElement of anchorElements){
+    anchorElement.classList.add('highlight');
+
+}
+};
+ highlightButtonSelector.addEventListener('click',highLightLinks);
 
 // const displayUserDataButton = document.getElementById('display-btn');
 
