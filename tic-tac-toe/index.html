@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="styles-tic-tac-toe/styles-tic.css">
   <link rel="stylesheet" href="styles-tic-tac-toe/overlay.css">
   <link rel="stylesheet" href="styles-tic-tac-toe/configuration.css">
+  <link rel="stylesheet" href="styles-tic-tac-toe/game.css">
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,800;1,600;1,700&family=Oswald:wght@300&display=swap" rel="stylesheet">
@@ -40,37 +41,37 @@
                     <article>
                         <h2>Player 1</h2>
                         <h3>PLAYER NAME</h3>
-                        <p>X</p>
-                        <button class="btn btn-alt">Edit</button>
+                        <p class="player-symbol">X</p>
+                        <button class="btn btn-alt" id="edit-player-1-btn">Edit</button>
                     </article>
                 </li>
                 <li>
                     <article>
                     <h2>Player 2</h2>
                     <h3>PLAYER NAME</h3>
-                    <p>O</p>
-                    <button class="btn btn-alt">Edit</button>
+                    <p class="player-symbol">O</p>
+                    <button class="btn btn-alt" id="edit-player-2-btn">Edit</button>
                 </article>
             </li>
         </ol>
         <button class="btn">Start New Game</button>
         </section>
         <section id="active-game">
-            <article>
+            <article id="game-over">
                 <h3>You Won! <span id="winner-name"> PLAYER NAME</span></h3>
-                <p>Click Start New Game</p>
+                <p>Click 'Start New Game'</p>
             </article>
                  <p>Your Turn <span id="active-player-name"> PLAYER NAME</span>!</p>
-            <ol>
+            <ol id="game-board">
+                <li class="disabled">X</li>
                 <li></li>
-                <li></li>
-                <li></li>
+                <li class="disabled">O</li>
 
                 <li></li>
-                <li></li>
+                <li class="disabled">X</li>
                 <li></li>
 
-                <li></li>
+                <li class="disabled" >O</li>
                 <li></li>
                 <li></li>
             </ol>

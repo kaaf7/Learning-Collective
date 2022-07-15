@@ -1,0 +1,65 @@
+#active-game{
+    text-align:center;
+    margin: 2rem 5rem 0;
+}
+
+#game-over{
+    width:90%;
+    max-width: 40rem;
+    margin:auto;
+    padding:1rem 2rem;
+    background-color: rgb(220, 220, 220);
+    color: black;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    font-size: 1rem;
+    display:none;
+}
+#game-over h2 {
+
+    font-weight: bold;
+    font-size: 1.4rem;
+
+}
+#active-player-name{
+    font-weight: bold;
+    color: black;
+}
+
+/* how to creat the grid*/
+
+#game-board{
+
+background-size: contain ;  
+list-style: none;
+margin:1rem 0;
+padding: 0;
+background-size: 150px;
+display:grid;
+grid-template-columns: repeat(3, 6rem);
+grid-template-rows: repeat(3, 6rem);
+justify-content: center;
+gap: 0.5rem;
+
+}
+/* how to creat the grid*/
+#game-board li {
+    background-color: rgb(204, 204, 204);
+    cursor: pointer;
+    outline: .5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight:bold;
+}
+#game-board li:hover  {
+    background-color: rgb(146, 146, 146);
+    
+}
+#game-board li.disabled  {
+    background-color: rgb(233, 233, 233);
+    cursor: default;
+    
+}
+
