@@ -1,0 +1,19 @@
+.modal{
+    position: fixed;
+    align-items: center;
+    top:20%;
+    left:35%;
+    width: 90%;
+    background-color: white;
+    padding:1rem;
+    border-radius:6px;
+    box-shadow:0 2px 8px black ;
+    display:none;
+}
+ @media(min-width:48rem){
+  .modal{
+  left:calc(50%-20rem);
+  width: 40rem;
+
+    }
+}
