@@ -9,20 +9,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="styles-tic-tac-toe/styles-tic.css">
   <link rel="stylesheet" href="styles-tic-tac-toe/overlay.css">
+  <link rel="stylesheet" href="styles-tic-tac-toe/configuration.css">
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,800;1,600;1,700&family=Oswald:wght@300&display=swap" rel="stylesheet">
-</head>
+</head> 
 <body>
+    <div id="backdrop"></div>
     <header id="main-header"> 
         <h1> Play Tic Tac Toe </h1>
         <p>Built with HTML, CSS, Javascript</p>
     </header>
     <main>
-        <aside class="modal">
+        <aside class="modal" id="config-overlay">
             <h2>Choose your name</h2>
             <form >
-                <div>
+                <div class="form-control">
                     <label for="playername">Player Name </label>
                     <input type="text" name="username" id="playername"/>
                 </div>
