@@ -24,7 +24,6 @@ calculateSumButton.addEventListener('click', calculateSum);
  anchorElement.classList.add('highlight');
 }
 
-
 };
  highlightButtonSelector.addEventListener('click', highLightLinks);
 
@@ -67,8 +66,6 @@ function deriveNumberOfDiceRolls()
     newRollListitemElement.textContent = outpuText;
     diceRollsListElement.append(newRollListitemElement);
     hasRolledtargetNumbe = rollednumber == enteredNumber;
-
-
     }
        const outputTotalRollsElement = document.getElementById('output-total-rolls')
        const outputTargetNumberElement = document.getElementById('output-target-number')
