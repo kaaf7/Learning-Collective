@@ -71,3 +71,14 @@ text-align: center;
         margin: 0.5rem 0;
        }
 
+       .error input{
+           border-color:red;
+           color: brown;
+           background-color: rgb(255, 246, 244);
+
+       }
+
+       .error label{
+        color: brown;
+       }
+

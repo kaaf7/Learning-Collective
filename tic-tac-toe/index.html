@@ -2,9 +2,8 @@
 <html lang="en">
 
 <head>
-  <script src="./script/config.js" defer></script>
-  <script src= "./script/app.js" defer></script>
-  <script src="./script/game.js" defer></script>
+    
+  
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +13,10 @@
   <link rel="stylesheet" href="styles-tic-tac-toe/overlay.css">
   <link rel="stylesheet" href="styles-tic-tac-toe/configuration.css">
   <link rel="stylesheet" href="styles-tic-tac-toe/game.css">
+  <script src="./script/config.js" defer></script>
+  <script src="./script/game.js" defer></script>
+  <script src= "./script/app.js" defer></script>
+  
   
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,11 +34,12 @@
             <form >
                 <div class="form-control">
                     <label for="playername">Player Name </label>
-                    <input type="text" name="username" id="playername"/>
+                    <input type="text" name="playername" id="playername" required/>
                 </div>
+                <p id="config-error"></p>
                 <div>
-                    <button type="button" class="btn btn-alt">Cancel</button>
-                    <button type="submit" class="btn">Confirm</button>
+                    <button type="button" class="btn btn-alt" id="cancel-config-btn">Cancel</button>
+                    <button type="submit" class="btn" id="confirm-config-btn">Confirm</button>
                 </div>
             </form>
         </aside>
