@@ -1,6 +1,13 @@
-function openPlayerConfig(){
+function openPlayerConfig(event){ 
+//const editedPlayer = evenmt.getElementById();// to access data element in HTML in edit-player-1-btn or edit-player--btn
+//const editedPlayer = document.querySelector('#game-configuration');
+//editedPlayer = document.getElementById('player-1-data');
 playerConfigOverlayElement.style.display = 'block';
 backdropElement.style.display = 'block';
+//const editedPlayer =event.target.dataset.playerid;
+
+ 
+
 
 }
 function closePlayerConfig(){
@@ -29,10 +36,17 @@ function closePlayerConfig(){
         event.target.firstElementChild.classList.add('error') // to add the word error to the div class form-control in HTML
         errorOutputElement.textContent = 'please enter a valid name';
         return;
-        }else {
-
         }
+        
+        updatePlayerDataElement = document.getElementById('player-'+ 2' + '-data'); 
+        updatePlayerDataElement.children[1].textContent=enteredPlayerName;
 
+
+       //players [editedPlayer-1].name=enteredPlayerName;
+        //const updatedPlayerData = document.getElementById('player-1-data');
+       // updatedPlayerData.children[1].textcontent = enteredPlayerName;
+        
+ 
 }
 
      
