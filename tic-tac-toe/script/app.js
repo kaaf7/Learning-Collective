@@ -3,9 +3,10 @@ const gameData= [
 , [0, 0, 0], 
   [0, 0, 0]];
 let editedPlayer= 0;
-const players=[ {name:'', symbol:'X', },{name:'', symbol:'O'} ];
 let activePlayer=0;
 let currentRound =1;
+
+const players=[ {name:'', symbol:'X', },{name:'', symbol:'O'} ];
 
 const playerConfigOverlayElement = document.getElementById('config-overlay') ;
 const backdropElement= document.getElementById('backdrop');
@@ -13,6 +14,7 @@ const formElement = document.querySelector('form');
 const errorOutputElement =  document.getElementById('config-error');
 const gameAreaElement = document.getElementById('active-game');
 const activePlayerNameElement = document.getElementById('active-player-name');
+const gameOverElement = document.getElementById('game-over');
 
 
 const editPlayer1BtnElement = document.getElementById('edit-player-1-btn');

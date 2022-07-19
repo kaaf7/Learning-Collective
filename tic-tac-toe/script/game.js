@@ -36,8 +36,10 @@ if(event.target.tagName !== 'LI'){
   
     gameData[selectedRow][selectedColumn]= activePlayer + 1;
     // add 1 because activePlayer in app.js file is 0 by default to set the 1st player to 1 and 2nd player to 2
-    const winnerId = checkGameOver();   
-    console.log(winnerId);
+    const winnerId = checkGameOver();   // check this again in lesson 319
+    if (winnerId !== 9){
+        endGame(winnerId);
+    }
     currentRound++;
     switchPlayer();
 
@@ -45,26 +47,24 @@ if(event.target.tagName !== 'LI'){
 
         //checking the rows
     for( let i = 0; i< 3; i++){
-    if(gameData[i][0]> 0 && 
+    if( gameData[i][0]> 0 && 
         gameData[i][0] === gameData[i][1] &&
-        gameData[i][1] ===  gameData[i][2]
-         ){
-        return gameData[i][0];
-    }
-}
-   for( let i = 0; i< 3; i++){
-    if(gameData[0][i]> 0 && 
+        gameData[i][1] ===  gameData[i][2]){return gameData[i][0];}
+} for( let i = 0; i < 3; i++){
+    if( gameData[0][i]> 0 && 
         gameData[0][i] === gameData[1][i] &&
         gameData[0][i] ===  gameData[2][i]){ return gameData[0][i]; } 
-    //diagonal left to bottom right
+    
+        //diagonal top left to bottom right
+
     } if (gameData[0][0] > 0 &&
-     gameData[0][0] === gameData[1][1] &&
-     gameData[1][1] === gameData[2][2]  ){ return gameData[0][0];}
+        gameData[0][0] === gameData[1][1] &&
+        gameData[1][1] === gameData[2][2]  ){ return gameData[0][0];}
 
  //diagonal Botom left to top right
     } if (gameData[2][0] > 0 &&
-    gameData[2][0] === gameData[1][1] &&
-    gameData[2][1] === gameData[0][2]  
+        gameData[2][0] === gameData[1][1] &&
+        gameData[2][1] === gameData[0][2]  
     ) { 
         return gameData[2][0];
       }
@@ -74,5 +74,18 @@ if(event.target.tagName !== 'LI'){
     }
 
     return 0;
+    }
+
+    function endGame(winnerId){
+        gameOverElement.style.display='block';
+
+        if(winnerId > 0 ) {
+        const winnerName = players[winnerId - 1].name;
+        gameOverElement.firstElementChild.firstElementChild.textContent = winnerName;
+
+     } else {
+         gameOverElement.firstElementChild.textContent= 'it\'s a draw!'
+     }
+
 
 }
